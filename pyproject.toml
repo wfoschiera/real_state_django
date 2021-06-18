@@ -5,7 +5,7 @@ description = "Sistema de gestao de imoveis feito em django"
 authors = ["wfoschiera <wfoschiera@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "3.8.10"
 Django = "^3.2.4"
 Pillow = "^8.2.0"
 gunicorn = "^20.1.0"
