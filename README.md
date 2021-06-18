@@ -27,7 +27,7 @@ git clone https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App.git
    1. Install all dependencies
 
       ```sh
-      pip install -r requirements.txt
+      poetry install
       ```
 
 3. **Install PostgreSQL in your Ubuntu 18.04**
