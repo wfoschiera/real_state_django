@@ -2,7 +2,7 @@
 
 {% load humanize %}
 
-{% block title %} | Welcome {% endblock %}
+{% block title %} | Bem vindo! {% endblock %}
 
 {% block content %}
 <!-- Showcase -->
@@ -11,7 +11,7 @@
       <div class="home-search p-5">
         <div class="overlay p-5">
           <h1 class="display-4 mb-4">
-            Property Searching Just Got So Easy
+            Encontrar sua nova casa nunca foi tão fácil.
           </h1>
           <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores eveniet vel nostrum magnam
             voluptatum tempore! Consectetur, id commodi!</p>
@@ -21,18 +21,18 @@
               <div class="form-row">
                 <div class="col-md-4 mb-3">
                   <label class="sr-only">Keywords</label>
-                  <input type="text" name="keywords" class="form-control" placeholder="Keyword (Pool, Garage, etc)">
+                  <input type="text" name="keywords" class="form-control" placeholder="Busca por palavras-chave">
                 </div>
 
                 <div class="col-md-4 mb-3">
                   <label class="sr-only">City</label>
-                  <input type="text" name="city" class="form-control" placeholder="City">
+                  <input type="text" name="city" class="form-control" placeholder="Cidade">
                 </div>
 
                 <div class="col-md-4 mb-3">
                   <label class="sr-only">State</label>
                   <select name="state" class="form-control">
-                    <option selected="true" disabled="disabled">State (All)</option>
+                    <option selected="true" disabled="disabled">Estado</option>
                     {% for key,value in state_choices.items %}
                       <option value="{{ key }}">{{ value }}</option>
                     {% endfor %}
@@ -44,7 +44,7 @@
                 <div class="col-md-6 mb-3">
                   <label class="sr-only">Bedrooms</label>
                   <select name="bedrooms" class="form-control">
-                    <option selected="true" disabled="disabled">Bedrooms (All)</option>
+                    <option selected="true" disabled="disabled">quantidade de quartos</option>
                     {% for key,value in bedroom_choices.items %}
                       <option value="{{ key }}">{{ value }}</option>
                     {% endfor %}
@@ -52,14 +52,14 @@
                 </div>
                 <div class="col-md-6 mb-3">
                   <select name="price" class="form-control" id="type">
-                    <option selected="true" disabled="disabled">Max Price (Any)</option>
+                    <option selected="true" disabled="disabled">Preço (max.)</option>
                     {% for key,value in price_choices.items %}
                       <option value="{{ key }}">{{ value }}</option>
                     {% endfor %}
                   </select>
                 </div>
               </div>
-              <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -136,23 +136,23 @@
         <div class="col-md-4">
           <i class="fas fa-comment fa-4x mr-4"></i>
           <hr>
-          <h3>Consulting Services</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
+          <h3>Consultoria</h3>
+          <p>Está pensando em comprar sua casa? Nós podemos te ajudar a encontrar a casa que combine com você.<br> Vai Vender? Fale conosco, vamos te assessorar em todo o processo.</p>
+
         </div>
         <div class="col-md-4">
           <i class="fas fa-home fa-4x mr-4"></i>
           <hr>
-          <h3>Propery Management</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
+          <h3>Quer alugar?</h3>
+          <p>Quer alugar seu imóvel com conforto e segurança? Nós gerenciamos seus contratos e cobranças para que você possa
+            investir seu tempo onde é mais valioso.</p>
         </div>
         <div class="col-md-4">
           <i class="fas fa-suitcase fa-4x mr-4"></i>
           <hr>
-          <h3>Renting & Selling</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
+          <h3>Quer construir?</h3>
+          <p>Nossa equipe conta com engenheiros, arquitetos e planejadores financeiros que poderão lhe assessorar na procura por um imóvel,
+            ou criação daquele projeto dos sonhos.</p>
         </div>
       </div>
     </div>
